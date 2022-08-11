@@ -8,13 +8,13 @@ import {MdWork} from 'react-icons/md';
 
 const About = () => {
   return (
-    <section id='about'>
+    <section className='about' id='about'>
       <h5>Find out</h5>
       <h2>About me</h2>
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image"/>
+            <img src={ME} alt="About Image" width='280'/>
           </div>
         </div>
 
