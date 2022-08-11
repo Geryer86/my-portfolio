@@ -1,16 +1,16 @@
 import React from 'react'
 import './contact.css'
 import { MdOutlineEmail } from 'react-icons/md'
-import { RiMessengerLine } from 'react-icons/ri'
+// import { RiMessengerLine } from 'react-icons/ri'
 import { BsWhatsapp } from 'react-icons/bs'
 import  { useRef } from 'react';
-// import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    //emailjs.sendForm('service_5o8yn7a', 'template_mzkty0e', form.current, 'Hq_EvGwJv0JZgklKq')
+    emailjs.sendForm('service_5o8yn7a', 'template_mzkty0e', form.current, 'Hq_EvGwJv0JZgklKq')
     e.target.reset()
   };
 
@@ -25,15 +25,15 @@ const Contact = () => {
             <MdOutlineEmail className='contact__option-icon' />
             <h4>Email</h4>
             <h5>german.af86@gmail.com</h5>
-            <a href="mailto:german.af86@gmail.com">Send a message</a>
+            <a href="mailto:german.af86@gmail.com" target='_blank'>Send a message</a>
           </article>
 
-          <article className='contact__option'>
+          {/* <article className='contact__option'>
             <MdOutlineEmail className='contact__option-icon' />
             <h4>Messenger</h4>
             <h5>Germán Flores</h5>
             <a href="https://m.me/germanflores">Send a message</a>
-          </article>
+          </article> */}
 
           <article className='contact__option'>
             <BsWhatsapp className='contact__option-icon' />
