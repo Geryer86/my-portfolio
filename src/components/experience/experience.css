@@ -40,6 +40,20 @@
   color: var(--color-primary);
 }
 
+.techs_container {
+  display: inline-flex;
+}
+
+.techs {
+  display: flex;
+  flex-direction: row;
+  width: 15rem;
+}
+
+.techs_logo {
+  width: 10rem;
+}
+
 /* MEDIA QUERIES (MEDIUM) */
 
 @media screen and (max-width: 1024px) {
@@ -68,5 +82,18 @@
   .experience__container > div {
     width: 100%;
     padding: 2rem 1rem;
+  }
+
+  .techs_container {
+    gap: 1rem;
+    width: 2rem;
+  }
+
+  .techs {
+    width: 100%;
+  }
+
+  .techs_logo {
+    width: 2rem;
   }
 }
