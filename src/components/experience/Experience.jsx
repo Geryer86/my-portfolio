@@ -10,7 +10,8 @@ import postgreSQL from "../../assets/logo__postgres.png";
 import react from "../../assets/logo__react.png";
 import redux from "../../assets/logo__redux.png";
 import sequelize from "../../assets/logo__sql.png";
-// import express from "./assets/express.png";
+import express from "../../assets/logo_ex.png";
+import typescript from "../../assets/logo__ts.png";
 
 const techs = [
   {
@@ -42,13 +43,15 @@ const techs = [
     src:redux,
     title:'Redux',
     style: 'shadow-violet-500'
+  }
+]
+const techs2 = [
+  {
+    id:6,
+    src:express,
+    title:'Express',
+    style: 'shadow-gray-500'
   },
-  // {
-  //   id:6,
-  //   src:express,
-  //   title:'Express',
-  //   style: 'shadow-gray-500'
-  // },
   {
     id:7,
     src:sequelize,
@@ -65,6 +68,12 @@ const techs = [
     id:9,
     src:postgreSQL,
     title:'PostgreSQL',
+    style: 'shadow-blue-300'
+  },
+  {
+    id:10,
+    src:typescript,
+    title:'TypeScript',
     style: 'shadow-blue-300'
   },
 ]
@@ -97,6 +106,13 @@ const Experience = () => {
               <div>
                 <h4>JavaScript</h4>
                 <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsShieldFillCheck className='experience__details-icon'/>
+              <div>
+                <h4>TypeScript</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
@@ -153,12 +169,35 @@ const Experience = () => {
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
+            <article className='experience__details'>
+              <BsShieldFillCheck className='experience__details-icon'/>
+              <div>
+                <h4>JavaScript</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsShieldFillCheck className='experience__details-icon'/>
+              <div>
+                <h4>TypeScript</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
           </div>
         </div>
       </div>
       <div className='techs_container'>
         {
           techs.map(({ id, src, title, style }) => (
+            <div className={`techs ${style}`}>
+              <img src={src} alt="" className='techs_logo'/>
+            </div>
+          ))
+        }
+      </div>
+      <div className='techs_container'>
+        {
+          techs2.map(({ id, src, title, style }) => (
             <div className={`techs ${style}`}>
               <img src={src} alt="" className='techs_logo'/>
             </div>

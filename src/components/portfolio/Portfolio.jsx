@@ -2,6 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/henry-countries-pi.PNG'
 import IMG2 from '../../assets/henry-games.PNG'
+import IMG3 from '../../assets/logo__ts.png'
 
 
 const Portfolio = () => {
@@ -18,6 +19,13 @@ const Portfolio = () => {
     title: "Henry Games",
     github: "https://github.com/Geryer86/HenryGames-PG",
     demo: "https://henry-games-pg.vercel.app"
+  },
+  {
+    id: 3,
+    image: IMG3,
+    title: "Subscriptors List (Typescript project from Midudev tutorials)",
+    github: "https://github.com/Geryer86/Subscriptors-list",
+    demo: "https://subscriptors-list.vercel.app/"
   }]
 
   return (
@@ -30,7 +38,7 @@ const Portfolio = () => {
             return (
               <article key={id} className='portfolio__items'>
                 <div className="portfolio__item-image">
-                  <img src={image} alt="PROJECT 1" width='100%'/>
+                  <img src={image} alt="PROJECT 1" width='80%'/>
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">

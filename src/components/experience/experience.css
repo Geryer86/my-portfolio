@@ -42,6 +42,7 @@
 
 .techs_container {
   display: inline-flex;
+  margin-left: 24rem;
 }
 
 .techs {
@@ -51,7 +52,7 @@
 }
 
 .techs_logo {
-  width: 10rem;
+  width: 12rem;
 }
 
 /* MEDIA QUERIES (MEDIUM) */
